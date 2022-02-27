@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+       
+        
+
+        <style>
+            #searchbar {
+
+                margin-top: 200px;
+                text-align:center;
+                flex-shrink: 0;
+                box-sizing: border-box;
+                max-height: 160px;
+                padding: 20px;
+               
+                
+             
+
+            }
+            #searchbar > input {
+                min-width:50%;
+                
+                height: 34px;
+                font-size: 16px;
+                padding-top:5px;
+                padding-bottom:5px;
+                padding-left:20px;
+                padding-right:20px;
+                border-radius:24px;
+                border:thin solid rgb(199, 199, 199);
+                
+                
+               
+            }
+            #searchbar > input:hover{
+                box-shadow: 1px 1px 3px 0px rgb(201, 201, 201);
+            }
+            #searchbar > input:focus{
+                outline:0;
+                box-shadow: 1px 1px 3px 0px rgb(201, 201, 201);
+            }
+
+            #googlelogo > img{
+                max-height: 100%;
+                max-width: 100%;
+                object-fit: contain;
+                object-position: center bottom;
+                width: auto;
+                
+            }
+            #googlelogo{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                position:relative;
+                bottom:230px;
+
+                
+            }
+
+            #submit{
+                text-align:center;
+               
+            }
+
+            
+           #submit > input{
+              text-align:center;
+               padding-top:10px;
+               padding-bottom:10px;
+               padding-left:20px;
+               padding-right:20px;
+               outline:none;
+               border:none;
+               background-color:whitesmoke;
+               border-radius: 5px;
+               position:relative;
+              
+               margin-top: 11px;
+                margin-right: 4px;
+                margin-bottom: 11px;
+                margin-left: 4px;
+
+           }
+           #submit > input:hover{
+            box-shadow: 0px 0px 3px 0px rgb(177, 174, 174);
+            
+           }
+           
+           #lucky{
+            text-align:center;
+            position:relative;
+            
+            bottom:110px;
+          
+           }
+          
+           .button {
+            
+               
+               position:relative;
+               margin:20px;
+               padding-top:10px;
+               padding-bottom:10px;
+               padding-left:20px;
+               padding-right:20px;
+               outline:none;
+               border:none;
+               background-color:whitesmoke;
+               border-radius: 5px;
+            }
+            .button:hover{
+                box-shadow: 0px 0px 3px 0px rgb(177, 174, 174);
+            }
+            #image{
+               
+                line-height: 24px;
+                vertical-align: middle;
+                text-align:left;
+                position:relative;
+                bottom:500px;
+                left:1270px;
+                font-family: Arial, sans-serif;
+                font-size:13px;
+                color:black;
+                width:60px;
+ 
+            }
+            #image:hover{
+                text-decoration:underline;
+            }
+            #advance{
+                line-height: 24px;
+                vertical-align: middle;
+                text-align:left;
+                position:relative;
+                bottom:537px;
+                left:1153px;
+                font-family: Arial, sans-serif;
+                font-size:13px;
+                color:black;
+                width:105px;
+            }
+            #advance:hover{
+                text-decoration:underline;
+            }
+            
+
+
+        </style>
+
+    </head>
+    <body>
+        <form action="https://google.com/search">
+            <div id="searchbar" > 
+               
+                 <input  type="text" name="q" >
+                 </div>
+            <div id ="submit">
+            <input type="submit" value="Google Search"></div>
+        </form>
+        <div id="googlelogo">
+            <img   alt="Google"  src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"  ></div>
+        <div id="bar"> </div>
+        <div id = "lucky">
+        <a href="https://www.google.com/doodles">
+        <button class="button" type="button" >I'm Feeling Lucky</button></a></div>
+        <a style="text-decoration:none" href="image.html"><p id="image" >Images</p></a>
+        <a style="text-decoration:none" href="advanced_search.html"><p id="advance" >Advanced search</p></a>
+    </body>
+</html>

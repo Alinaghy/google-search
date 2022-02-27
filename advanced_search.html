@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+      
+        
+
+        <style>
+
+            #googlelogo > img{
+                height: 25px;
+                width: 25px;
+                object-fit: contain;
+                object-position: left;
+                width: auto;
+                
+            }
+            #googlelogo{
+                display: flex;
+                flex-direction: column;
+                align-items: left;
+                position:relative;
+                bottom:230px;
+                left:10px;
+                width:100px;
+            }
+
+            #submit{
+                text-align:left;
+                
+            }
+
+            
+           #submit > input{
+               text-align:center;
+               padding-top:5px;
+               padding-bottom:5px;
+               padding-left:12px;
+               padding-right:12px;
+               outline:none;
+               border:none;
+               background-color: #4d90fe;
+               border: 1px solid #3079ed;
+               color:white;
+               border-radius: 2px;
+               cursor: default;
+               font-size: 11px;
+               font-weight: bold;
+               position:relative;
+               top:230px;
+               left:721px;
+               width:120px;
+               height:32px;
+
+           }
+           #submit > input:hover{
+            background-color: #337ef7;
+            border: 1px solid #2369db;
+            
+           }
+           #all , #exact , #any , #none{
+               min-width:45%;
+               height:25px;
+               margin:10px;
+               margin-left:50px;
+               font-weight: inherit;
+                font-style: inherit;
+                font-size: 13px;
+                border:thin solid rgb(206, 206, 206);
+                border-radius: 1px;
+           }
+           .mb-3{
+               margin-left:30px;
+               position:relative;
+               top:220px;
+               padding:1px;
+
+           }
+           #all{
+            position:relative;
+            left:64px;
+           }
+           #any{
+            position:relative;
+            left:40px;
+           }
+           #none{
+            position:relative;
+            left:33px;
+           }
+           #none:hover{
+               box-shadow:0px 0px 1px 1px rgb(221, 221, 221) ;
+           }
+           #any:hover{
+            box-shadow:0px 0px 1px 1px rgb(221, 221, 221) ;
+           }
+           #all:hover{
+            box-shadow:0px 0px 1px 1px rgb(221, 221, 221) ;
+           }
+           #exact:hover{
+            box-shadow:0px 0px 1px 1px rgb(221, 221, 221) ;
+           }
+           #info{
+               text-align:right;
+               position:relative;
+               left:855px;
+               bottom:42px;
+
+
+           }
+           .p{
+               text-align:left;
+               color: #666;
+               font-family: arial,sans-serif;
+               font-size: 12px;
+               padding:9px;
+           }
+           #red-info{
+               text-align:left;
+               color: #d93025;
+               font-size: 20px;
+               font-family: arial,sans-serif;
+               position:relative;
+               bottom:400px;
+               left:30px;
+           }
+           hr{
+            position:relative;
+            bottom:394px;
+            border:none;
+            border-bottom:1px solid rgb(230, 230, 230);
+            
+           }
+           #fpw{
+               text-align:left;
+               font-family: arial,sans-serif;
+               position:relative;
+               bottom:365px;
+               left:30px;
+               font-size: 16px;
+
+           }
+           #td{
+               text-align: left;
+               font-family: arial,sans-serif;
+               font-size: 14px;
+               position:relative;
+               bottom:375px;
+               left:830px;
+               color: #666;
+               width:auto;
+
+           }
+           #google-search{
+                line-height: 24px;
+                vertical-align: middle;
+                bottom:600px;
+                left:1250px;
+                position:relative;
+                
+                width:80px;
+                font-family: Arial, sans-serif;
+                font-size:12px;
+                color:black;
+           }
+           #google-search:hover{
+            text-decoration:underline;
+           
+           }
+           #all:focus{
+               outline:0;
+               border:1px solid #4d90fe;
+
+           }
+           #any:focus{
+            outline:0;
+               border:1px solid #4d90fe;
+
+           }
+           #none:focus{
+           outline:0;
+               border:1px solid #4d90fe;
+           }
+           #exact:focus{
+            outline:0;
+               border:1px solid #4d90fe;
+
+           }
+           
+          
+
+         
+            
+
+
+        </style>
+    </head>
+
+    <body>
+        <form action="https://google.com/search">
+            <div class="mb-3">
+              <label for="all" class="form-label">all these words:</label>
+              <input type="text" name="as_q"  id="all" >
+            </div>
+            <div class="mb-3">
+              <label for="exact" class="form-label">this exact word or phrase:</label>
+              <input type="text" name="as_epq"  id="exact">
+            </div>
+            <div class="mb-3">
+                <label for="any" class="form-label">any of these words:</label>
+                <input type="text" name="as_oq"  id="any">
+            </div>
+            <div class="mb-3">
+                <label for="none" class="form-label">none of these words:</label>
+                <input type="text" name="as_eq" id="none">
+            </div>
+            <div id ="submit">
+                <input type="submit" value="Advanced search"></div>
+          </form>
+          <a  href="index.html">
+        <div id="googlelogo">
+            
+            <img   alt="Google"  src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"  ></div></a>
+        <div id="info">
+            <p class="p">Type the important words: tri-colour rat terrier</p>
+            <p class="p">Put exact words in quotes: "rat terrier"</p>
+            <p class="p">Type OR between all the words you want:<br>miniature OR standard</p>
+            <p class="p">Put a minus sign just before words that you don't want:<br>-rodent, -"Jack Russell"</p></div>
+            <p id="red-info">Advanced Search</p>
+            <hr/>
+            <p id="fpw">Find pages with...</p>
+            <p id="td">To do this in the search box.</p>
+            <a style="text-decoration:none" href="index.html">
+            <p id="google-search">Google search</p> </a>
+       
+    </body>
+
+</html>
